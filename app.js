@@ -10,10 +10,7 @@ var app = express(),
 
 io.set('log level', 1);
 
-//express configuration
-app.use("/styles", express.static(__dirname + '/public/styles'));
 app.use("/scripts", express.static(__dirname + '/public/scripts'));
-app.use("/images", express.static(__dirname + '/public/images'));
 
 //routes
 app.get('/', function (req, res) {
