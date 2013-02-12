@@ -12,11 +12,6 @@ io.set('log level', 1);
 
 app.use("/scripts", express.static(__dirname + '/public/scripts'));
 
-//routes
-app.get('/', function (req, res) {
-    res.sendfile(__dirname + '/public/index.html');
-});
-
 var redisClient = redis.createClient(process.env.REDIS_PORT, process.env.REDIS_HOST);
 
 redisClient.auth(process.env.REDIS_SECRET, function (err) {
