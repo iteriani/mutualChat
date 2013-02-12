@@ -1,0 +1,152 @@
+
+/* Universal Nav Bar
+------------------------------------*/
+
+#csNav {
+  background-color: #281f23;
+  background-image: -moz-linear-gradient(19% 75% 90deg,#251D21, #30292c);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#30292C), to(#251D21));
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: -2px 2px 2px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  color: #888;
+  height: 40px;
+  min-width: 940px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+#csNav #csLogo {
+  background: url(/code_path_course_engine/images/codeschool_logo.png) center no-repeat;
+  border: none;
+  float: left;
+  height: 40px;
+  margin: 0 30px 0 0;
+  text-indent: -9999em;
+  text-transform: capitalize;
+  width: 105px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+}
+#csNav #csLogo:hover {
+  opacity: 0.7;
+}
+#csNav ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#csNav li {
+  float: left;
+}
+#csNav li:hover {
+  background-color:#3a3336;
+  background-image:-moz-linear-gradient(19% 75% 90deg, #3A3336, #50494C);
+  background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#50494C), to(#3A3336));
+  color: #c78144;
+}
+#csNav li a,
+#csNav #csUser,
+#csNav #csSession {
+  border-right: 1px solid #3c3437;
+  color: #888;
+  display: block;
+  font: normal 12px/40px Tahoma, Arial, sans-serif;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+#csNav li:last-child a {
+  border: none;
+}
+#csNav li a:hover,
+#csNav #csUser:hover,
+#csNav #csSession:hover {
+  color: #c78144;
+}
+#csNav #csSubnav a {
+  background: url(/code_path_course_engine/images/nav_arrow_down.png) 75px center no-repeat;
+  padding-right: 21px;
+}
+#csNav #csSubnav ul {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 40px;
+}
+#csNav #csSubnav li {
+  background-color:#3a3336;
+  float: none;
+  overflow: hidden;
+}
+#csNav #csSubnav li:last-child {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+#csNav #csSubnav li a {
+  background: none;
+  border: none;
+  padding-right: 10px;
+}
+#csNav #csSubnav li a:hover {
+  background-color:#4f494b;
+  background-image:none;
+}
+#csNav #csSubnav:hover ul {
+  display: block;
+}
+#csNav #csUser {
+  float: right;
+  padding-left: 40px;
+  position: relative;
+}
+#csNav #csUser img {
+  border: 1px solid #222;
+  left: 10px;
+  position: absolute;
+  top: 9px;
+}
+#csNav #csSession {
+  border: none;
+  float: right;
+}
+
+/* ----- Notices ----- */
+
+#flash {
+  background: #39C;
+  background-color: rgba(51,153,204,0.95);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-bottom: 3px solid #c3c9c7;
+  border-bottom: 3px solid rgba(62,57,61,0.25);
+  display: none;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+#flash p {
+  color: #fff;
+  margin: 0 auto;
+  padding: 14px 30px 14px 0;
+  position: relative;
+  width: 920px;
+  font-size: 1.5em;
+}
+.flash-close {
+  background: #3f3a3c url(../images/flash-close.png) center no-repeat;
+  border: 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  display: block;
+  height: 26px;
+  position: absolute;
+  right: 0;
+  top: 9px;
+  width: 26px;
+}

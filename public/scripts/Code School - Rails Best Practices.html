@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://railsbest.com/levels/4/challenges/6 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>
+Code School - Rails Best Practices
+</title>
+<link href="http://railsbest.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="./Code School - Rails Best Practices_files/main.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./Code School - Rails Best Practices_files/style.css" media="screen" rel="stylesheet" type="text/css">
+<script type="text/javascript" async="" src="./Code School - Rails Best Practices_files/ga.js"></script><script src="./Code School - Rails Best Practices_files/jquery.js" type="text/javascript"></script>
+<script src="./Code School - Rails Best Practices_files/rails.js" type="text/javascript"></script>
+<script src="./Code School - Rails Best Practices_files/facebox.js" type="text/javascript"></script>
+<script src="./Code School - Rails Best Practices_files/application.js" type="text/javascript"></script>
+<script src="./Code School - Rails Best Practices_files/viddler.js" type="text/javascript"></script>
+<script src="./Code School - Rails Best Practices_files/widgets.js" type="text/javascript"></script>
+<script src="./Code School - Rails Best Practices_files/ace-uncompressed.js" type="text/javascript"></script><style>.ace_editor {    position: absolute;    overflow: hidden;    font-family: "Menlo", "Monaco", "Courier New", monospace;    font-size: 12px;  }.ace_scroller {    position: absolute;    overflow-x: scroll;    overflow-y: hidden;     }.ace_content {    position: absolute;    box-sizing: border-box;    -moz-box-sizing: border-box;    -webkit-box-sizing: border-box;}.ace_composition {    position: absolute;    background: #555;    color: #DDD;    z-index: 4;}.ace_gutter {    position: absolute;    overflow-x: hidden;    overflow-y: hidden;    height: 100%;}.ace_gutter-cell.ace_error {    background-image: url("data:image/gif,GIF89a%10%00%10%00%D5%00%00%F5or%F5%87%88%F5nr%F4ns%EBmq%F5z%7F%DDJT%DEKS%DFOW%F1Yc%F2ah%CE(7%CE)8%D18E%DD%40M%F2KZ%EBU%60%F4%60m%DCir%C8%16(%C8%19*%CE%255%F1%3FR%F1%3FS%E6%AB%B5%CA%5DI%CEn%5E%F7%A2%9A%C9G%3E%E0a%5B%F7%89%85%F5yy%F6%82%80%ED%82%80%FF%BF%BF%E3%C4%C4%FF%FF%FF%FF%FF%FF%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00!%F9%04%01%00%00%25%00%2C%00%00%00%00%10%00%10%00%00%06p%C0%92pH%2C%1A%8F%C8%D2H%93%E1d4%23%E4%88%D3%09mB%1DN%B48%F5%90%40%60%92G%5B%94%20%3E%22%D2%87%24%FA%20%24%C5%06A%00%20%B1%07%02B%A38%89X.v%17%82%11%13q%10%0Fi%24%0F%8B%10%7BD%12%0Ei%09%92%09%0EpD%18%15%24%0A%9Ci%05%0C%18F%18%0B%07%04%01%04%06%A0H%18%12%0D%14%0D%12%A1I%B3%B4%B5IA%00%3B");    background-repeat: no-repeat;    background-position: 4px center;}.ace_gutter-cell.ace_warning {    background-image: url("data:image/gif,GIF89a%10%00%10%00%D5%00%00%FF%DBr%FF%DE%81%FF%E2%8D%FF%E2%8F%FF%E4%96%FF%E3%97%FF%E5%9D%FF%E6%9E%FF%EE%C1%FF%C8Z%FF%CDk%FF%D0s%FF%D4%81%FF%D5%82%FF%D5%83%FF%DC%97%FF%DE%9D%FF%E7%B8%FF%CCl%7BQ%13%80U%15%82W%16%81U%16%89%5B%18%87%5B%18%8C%5E%1A%94d%1D%C5%83-%C9%87%2F%C6%84.%C6%85.%CD%8B2%C9%871%CB%8A3%CD%8B5%DC%98%3F%DF%9BB%E0%9CC%E1%A5U%CB%871%CF%8B5%D1%8D6%DB%97%40%DF%9AB%DD%99B%E3%B0p%E7%CC%AE%FF%FF%FF%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00!%F9%04%01%00%00%2F%00%2C%00%00%00%00%10%00%10%00%00%06a%C0%97pH%2C%1A%8FH%A1%ABTr%25%87%2B%04%82%F4%7C%B9X%91%08%CB%99%1C!%26%13%84*iJ9(%15G%CA%84%14%01%1A%97%0C%03%80%3A%9A%3E%81%84%3E%11%08%B1%8B%20%02%12%0F%18%1A%0F%0A%03'F%1C%04%0B%10%16%18%10%0B%05%1CF%1D-%06%07%9A%9A-%1EG%1B%A0%A1%A0U%A4%A5%A6BA%00%3B");    background-repeat: no-repeat;    background-position: 4px center;}.ace_editor .ace_sb {    position: absolute;    overflow-x: hidden;    overflow-y: scroll;    right: 0;}.ace_editor .ace_sb div {    position: absolute;    width: 1px;    left: 0;}.ace_editor .ace_print_margin_layer {    z-index: 0;    position: absolute;    overflow: hidden;    margin: 0;    left: 0;    height: 100%;    width: 100%;}.ace_editor .ace_print_margin {    position: absolute;    height: 100%;}.ace_editor textarea {    position: fixed;    z-index: -1;    width: 10px;    height: 30px;    opacity: 0;    background: transparent;    appearance: none;    border: none;    resize: none;    outline: none;    overflow: hidden;}.ace_layer {    z-index: 1;    position: absolute;    overflow: hidden;      white-space: nowrap;    height: 100%;    width: 100%;}.ace_text-layer {    font-family: Monaco, "Courier New", monospace;    color: black;}.ace_cjk {    display: inline-block;    text-align: center;}.ace_cursor-layer {    z-index: 4;    cursor: text;    pointer-events: none;}.ace_cursor {    z-index: 4;    position: absolute;}.ace_line {    white-space: nowrap;}.ace_marker-layer {}.ace_marker-layer .ace_step {    position: absolute;    z-index: 3;}.ace_marker-layer .ace_selection {    position: absolute;    z-index: 4;}.ace_marker-layer .ace_bracket {    position: absolute;    z-index: 5;}.ace_marker-layer .ace_active_line {    position: absolute;    z-index: 2;}</style><style>.ace-tm .ace_editor {  border: 2px solid rgb(159, 159, 159);}.ace-tm .ace_editor.ace_focus {  border: 2px solid #327fbd;}.ace-tm .ace_gutter {  width: 50px;  background: #e8e8e8;  color: #333;  overflow : hidden;}.ace-tm .ace_gutter-layer {  width: 100%;  text-align: right;}.ace-tm .ace_gutter-layer .ace_gutter-cell {  padding-right: 6px;}.ace-tm .ace_print_margin {  width: 1px;  background: #e8e8e8;}.ace-tm .ace_text-layer {  cursor: text;}.ace-tm .ace_cursor {  border-left: 2px solid black;}.ace-tm .ace_cursor.ace_overwrite {  border-left: 0px;  border-bottom: 1px solid black;}        .ace-tm .ace_line .ace_invisible {  color: rgb(191, 191, 191);}.ace-tm .ace_line .ace_keyword {  color: blue;}.ace-tm .ace_line .ace_constant.ace_buildin {  color: rgb(88, 72, 246);}.ace-tm .ace_line .ace_constant.ace_language {  color: rgb(88, 92, 246);}.ace-tm .ace_line .ace_constant.ace_library {  color: rgb(6, 150, 14);}.ace-tm .ace_line .ace_invalid {  background-color: rgb(153, 0, 0);  color: white;}.ace-tm .ace_line .ace_support.ace_function {  color: rgb(60, 76, 114);}.ace-tm .ace_line .ace_support.ace_constant {  color: rgb(6, 150, 14);}.ace-tm .ace_line .ace_support.ace_type,.ace-tm .ace_line .ace_support.ace_class {  color: rgb(109, 121, 222);}.ace-tm .ace_line .ace_keyword.ace_operator {  color: rgb(104, 118, 135);}.ace-tm .ace_line .ace_string {  color: rgb(3, 106, 7);}.ace-tm .ace_line .ace_comment {  color: rgb(76, 136, 107);}.ace-tm .ace_line .ace_comment.ace_doc {  color: rgb(0, 102, 255);}.ace-tm .ace_line .ace_comment.ace_doc.ace_tag {  color: rgb(128, 159, 191);}.ace-tm .ace_line .ace_constant.ace_numeric {  color: rgb(0, 0, 205);}.ace-tm .ace_line .ace_variable {  color: rgb(49, 132, 149);}.ace-tm .ace_line .ace_xml_pe {  color: rgb(104, 104, 91);}.ace-tm .ace_marker-layer .ace_selection {  background: rgb(181, 213, 255);}.ace-tm .ace_marker-layer .ace_step {  background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {  background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {  margin: -1px 0 0 -1px;  border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active_line {  background: rgb(232, 242, 254);}.ace-tm .ace_string.ace_regex {  color: rgb(255, 0, 0)   }</style>
+<script src="./Code School - Rails Best Practices_files/theme-course.js" type="text/javascript"></script>
+<script src="./Code School - Rails Best Practices_files/mode-ruby.js" type="text/javascript"></script>
+<script src="./Code School - Rails Best Practices_files/jquery.hotkeys.js" type="text/javascript"></script>
+
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="gBtWRJLeFwpkL1KwRiylV5dYNnaxB+XSK9bxDsNA12k=">
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-9740749-13']);_gaq.push(['a._setAccount', 'UA-9740749-23']);_gaq.push(['a._setDomainName', 'none']);_gaq.push(['a._setAllowLinker', true]);_gaq.push(['a._addIgnoredRef', 'railsbest.com']);_gaq.push(['a._addIgnoredRef', 'superrails.com']);_gaq.push(['a._addIgnoredRef', 'codeschool.com']);_gaq.push(['_trackPageview', '/levels/4/challenges/6']);_gaq.push(['a._trackPageview', '/railsbest.com/levels/4/challenges/6']);(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+/* ]]> */
+</script>
+<style>.ace-course .ace_editor {
+  border: 2px solid rgb(159, 159, 159);
+}
+
+.ace-course .ace_editor.ace_focus {
+  border: 2px solid #327fbd;
+}
+
+.ace-course .ace_gutter {
+  width: 25px;
+  background: #969ca1;
+  border-right: 1px solid #141618;
+  color: #555;
+  overflow : hidden;
+}
+
+.ace-course .ace_gutter-layer {
+  width: 100%;
+  text-align: center;
+}
+
+.ace-course .ace_print_margin {
+  display: none;
+  width: 0;
+}
+
+.ace-course .ace_scroller {
+  background-color: #141618;
+}
+
+.ace-course .ace_text-layer {
+  cursor: text;
+  color: #F8F8F8;
+}
+
+.ace-course .ace_cursor {
+  border-left: 2px solid #A7A7A7;
+}
+
+.ace-course .ace_cursor.ace_overwrite {
+  border-left: 0px;
+  border-bottom: 1px solid #A7A7A7;
+}
+.ace-course.normal-mode .ace_cursor.ace_overwrite {
+  border: 1px solid #FFE300;
+  background: #766B13;
+}
+ 
+.ace-course .ace_marker-layer .ace_selection {
+  background: rgba(221, 240, 255, 0.20);
+}
+
+.ace-course .ace_marker-layer .ace_step {
+  background: rgb(198, 219, 174);
+}
+
+.ace-course .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.ace-course .ace_marker-layer .ace_active_line {
+  
+}
+
+       
+.ace-course .ace_invisible {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.ace-course .ace_keyword {
+  color: #ff967a;
+}
+
+.ace-course .ace_keyword.ace_operator {
+ color: #3187b6; 
+}
+
+.ace-course .ace_constant {
+  color:#CF6A4C;
+}
+
+.ace-course .ace_constant.ace_language {
+  
+}
+
+.ace-course .ace_constant.ace_library {
+  
+}
+
+.ace-course .ace_constant.ace_numeric {
+  
+}
+
+.ace-course .ace_invalid {
+  
+}
+
+.ace-course .ace_invalid.ace_illegal {
+  color:#F8F8F8;
+background-color:rgba(86, 45, 86, 0.75);
+}
+
+.ace-course .ace_invalid.ace_deprecated {
+  text-decoration:underline;
+font-style:italic;
+color:#D2A8A1;
+}
+
+.ace-course .ace_support {
+  color:#9B859D;
+}
+
+.ace-course .ace_support.ace_function {
+  color:#DAD085;
+}
+
+.ace-course .ace_function.ace_buildin {
+  
+}
+
+.ace-course .ace_string {
+  color:#22a926;
+}
+
+.ace-course .ace_string.ace_regexp {
+  color:#E9C062;
+}
+
+.ace-course .ace_comment {
+  font-style:italic;
+color:#5F5A60;
+}
+
+.ace-course .ace_comment.ace_doc {
+  
+}
+
+.ace-course .ace_comment.ace_doc.ace_tag {
+  
+}
+
+.ace-course .ace_variable {
+  color:#7587A6;
+}
+
+.ace-course .ace_variable.ace_language {
+  
+}
+
+.ace-course .ace_xml_pe {
+  color:#494949;
+}</style><script src="./Code School - Rails Best Practices_files/code_highlighter.js"></script><style type="text/css"></style><script src="./Code School - Rails Best Practices_files/html.js"></script><script src="./Code School - Rails Best Practices_files/ruby.js"></script></head>
+<body class="lab-4" data-twttr-rendered="true"><div style="height: auto; width: auto; top: -40000px; left: -40000px; visibility: hidden; position: absolute; overflow: visible; white-space: nowrap; font-family: Monaco, &#39;Courier New&#39;, monospace; font-size: 12px; font-weight: normal; font-style: normal; line-height: normal;">XyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXyXy</div>
+<div id="csNav">
+<a href="http://www.codeschool.com/" id="csLogo" rel="internal">Code School</a>
+<ul>
+<li>
+<a href="http://www.codeschool.com/" rel="internal">Home</a>
+</li>
+<li>
+<a href="http://www.codeschool.com/account/courses" rel="internal">My Courses</a>
+</li>
+<li>
+<a href="http://www.codeschool.com/account" rel="internal">Account</a>
+</li>
+<li>
+<a href="http://www.codeschool.com/support" rel="internal">Support</a>
+</li>
+</ul>
+<a href="http://railsbest.com/users/sign_out" id="csSession" rel="internal">Sign Out</a>
+<a href="http://www.codeschool.com/account" id="csUser" rel="internal">alfredo</a>
+</div>
+
+
+<div id="results" style="display: block;"><div class="message error">
+<a href="http://railsbest.com/levels/4/challenges/6#" class="texthide" id="results-close">Close Results</a>
+<h3>Sorry, Try Again</h3>
+<p>#&lt;NoMethodError: undefined method `+@' for ":":String&gt;</p>
+</div>
+</div>
+<div id="content">
+<div id="content-main">
+<div id="content-header">
+<div id="challenge_points">
+250
+</div>
+<h1>
+Head to to_s
+<em>
+6 of 7
+</em>
+</h1>
+<div class="current" id="objective">
+<p>Define #to_s on the Tweet model to include the users username and the tweets status. Ex. "jimbob: I am hungry"
+</p>
+</div>
+</div>
+<div id="resources-wrap">
+<ul id="resource-tabs">
+<li><a href="http://railsbest.com/levels/4/challenges/6#" id="database_tab" class="active">Database</a></li>
+<li id="resource-hints"><a href="http://railsbest.com/levels/4/challenges/6#" id="hints_tab">Hints</a></li>
+<li id="resource-results"><a href="http://railsbest.com/levels/4/challenges/6#">Results</a></li>
+</ul>
+<div id="resources">
+<div id="resources-content">
+<div class="resource-panel">
+<div id="database">
+<div class="database-table">
+<h3>Users</h3>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>username</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>mariolovesprinces</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="database-table">
+<h3>Tweets</h3>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>status</th>
+<th>user_id</th>
+<th>created_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Hangin with Goompa</td>
+<td>1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
+<div class="resource-panel" id="hints" style="display: none;">
+<p>
+<a href="http://railsbest.com/levels/4/challenges/6/next_hint.json" id="next_hint">Next Hint (-75 Points)</a>
+<span id="hints_remaining">
+3 hints
+remaining
+</span>
+</p>
+<ol></ol>
+
+</div>
+<div class="resource-panel" id="output" style="display: none;"></div>
+</div>
+</div>
+<div id="resources-shadow"></div>
+</div>
+</div>
+</div>
+<div id="editor" style="height: 281px;">
+<ul id="editor-tabs">
+<li style="width: auto;"><a href="http://railsbest.com/levels/4/challenges/6#" class="active">app/models/tweet.rb</a></li>
+</ul>
+<form accept-charset="UTF-8" action="./Code School - Rails Best Practices_files/Code School - Rails Best Practices.html" data-remote="true" id="editor-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="_method" type="hidden" value="put"><input name="authenticity_token" type="hidden" value="gBtWRJLeFwpkL1KwRiylV5dYNnaxB+XSK9bxDsNA12k="></div>
+
+<div id="content-input">
+<textarea id="cmd" name="cmd" style="display:none"></textarea>
+<div class="editor-wrap" style="width: 100%; left: 0px;">
+<div class="editor ace_editor ace-course ace_focus" data-file-name="app/models/tweet.rb" data-initial-value="class Tweet &lt; ActiveRecord::Base
+  belongs_to :user
+end" id="editor0"><div class="ace_gutter"><div class="ace_layer ace_gutter-layer" style="margin-top: 0px; height: 260px;"><div class="ace_gutter-cell " title="" style="height:16px;">1</div><div class="ace_gutter-cell " title="" style="height:16px;">2</div><div class="ace_gutter-cell " title="" style="height:16px;">3</div><div class="ace_gutter-cell " title="" style="height:16px;">4</div><div class="ace_gutter-cell " title="" style="height:16px;">5</div><div class="ace_gutter-cell " title="" style="height:16px;">6</div><div class="ace_gutter-cell " title="" style="height:16px;">7</div></div></div><div class="ace_scroller" style="height: 228px; left: 26px; width: 903px;"><div class="ace_content" style="padding: 0px 4px; margin-top: 0px; width: 895px; height: 260px;"><div class="ace_layer ace_marker-layer"><div class="ace_active_line" style="height:16px;width:895px;top:64px;left:0px;"></div><div class="ace_active_line" style="height:16px;top:80px;width:0px;"></div><div class="ace_active_line" style="height:0px;width:895px;top:80px;"></div></div><div class="ace_print_margin_layer"><div class="ace_print_margin" style="left: 568px; visibility: visible;"></div></div><div class="ace_layer ace_text-layer"><div class="ace_line" style="height: 16px; width: 895px;"><div style="height:16px"><span class="ace_keyword">class</span>&nbsp;<span class="ace_identifier">Tweet</span>&nbsp;<span class="ace_keyword ace_operator">&lt;</span>&nbsp;<span class="ace_identifier">ActiveRecord</span>::<span class="ace_identifier">Base</span></div></div><div class="ace_line" style="height: 16px; width: 895px;"><div style="height:16px">&nbsp;&nbsp;<span class="ace_identifier">belongs_to</span>&nbsp;:<span class="ace_identifier">user</span></div></div><div class="ace_line" style="height: 16px; width: 895px;"><div style="height:16px">&nbsp;&nbsp;</div></div><div class="ace_line" style="height: 16px; width: 895px;"><div style="height:16px">&nbsp;&nbsp;<span class="ace_keyword">def</span>&nbsp;<span class="ace_identifier">to_s</span></div></div><div class="ace_line" style="height: 16px; width: 895px;"><div style="height:16px">&nbsp;&nbsp;&nbsp;&nbsp;<span class="ace_support ace_function">puts</span>&nbsp;<span class="ace_variable ace_language">self</span>.<span class="ace_identifier">user</span>.<span class="ace_identifier">username</span>&nbsp;<span class="ace_keyword ace_operator">+</span><span class="ace_string">":"</span><span class="ace_keyword ace_operator">+</span>&nbsp;<span class="ace_variable ace_language">self</span>.<span class="ace_identifier">status</span></div></div><div class="ace_line" style="height: 16px; width: 895px;"><div style="height:16px">&nbsp;&nbsp;<span class="ace_keyword">end</span>&nbsp;</div></div><div class="ace_line" style="height: 16px; width: 895px;"><div style="height:16px"><span class="ace_keyword">end</span></div></div></div><div class="ace_layer ace_cursor-layer"><div class="ace_cursor" style="left: 98px; top: 64px; width: 7px; height: 16px; visibility: hidden;"></div></div></div></div><div class="ace_sb" style="width: 0px; height: 228px;"><div style="height: 112px;"></div></div><textarea style="left: 248px; top: 561px;"></textarea></div>
+</div>
+<div id="cmd-output"></div>
+</div>
+<p id="submit-instructions">
+<a href="http://railsbest.com/levels/4/challenges/6#" class="texthide" id="manual_submit">Submit Code</a>
+or ⌘ + ENTER
+</p>
+<div id="gregg"></div>
+<div id="editor-split">
+<a href="http://railsbest.com/levels/4/challenges/6#" class="texthide active" id="editor-split-single">Single</a>
+<a href="http://railsbest.com/levels/4/challenges/6#" class="texthide disabled" id="editor-split-double">Split</a>
+</div>
+</form></div>
+<div id="content-sidebar">
+<div id="scoreboard">
+<span>
+4950
+</span>
+Total Points
+</div>
+<ul id="sidebar-utility">
+<li><a href="http://railsbest.com/levels/4" id="utility-video">Rewatch Video</a></li>
+<li><a href="./Code School - Rails Best Practices_files/Code School - Rails Best Practices.html" id="utility-reset">Reset Challenge</a></li>
+<li><a href="http://railsbest.com/levels/switch?current_exercise_id=25" id="utility-level">Change Level</a></li>
+</ul>
+<h2>Level 4 · Model Bert</h2>
+<ol>
+<li class="completed"><a href="http://railsbest.com/levels/4/challenges/1">N<span class="plus">+</span>1 is not for fun</a></li>
+<li class="completed"><a href="http://railsbest.com/levels/4/challenges/2">Counter Cache Money</a></li>
+<li class="completed"><a href="http://railsbest.com/levels/4/challenges/3">Batches of Find Each</a></li>
+<li class="completed"><a href="http://railsbest.com/levels/4/challenges/4">Law of Demeter (part 1)</a></li>
+<li class="completed"><a href="http://railsbest.com/levels/4/challenges/5">Law of Demeter (part 2)</a></li>
+<li class="current"><a href="./Code School - Rails Best Practices_files/Code School - Rails Best Practices.html">Head to to_s</a></li>
+<li class=""><a href="http://railsbest.com/levels/4/challenges/7">To Param</a></li>
+</ol>
+<ul id="sidebar-downloads">
+<li><a href="http://courseware.codeschool.com/Rails_Best_Practices_Slides.pdf" id="downloads-slides">Download Course Slides</a></li>
+<li><a href="http://www.viddler.com/explore/codeschool/videos/24.mp4?vfid=7a83045c4524d2ed" id="downloads-video">Download Video</a></li>
+</ul>
+<a href="http://railsbest.com/levels" class="texthide" id="logo">Rails Best Practices</a>
+</div>
+<div id="twitter-button-wrapper" style="display:none">
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="./Code School - Rails Best Practices_files/tweet_button.1359159993.html" class="twitter-share-button twitter-count-horizontal" style="width: 107px; height: 20px;" title="Twitter Tweet Button" data-twttr-rendered="true"></iframe>
+
+</div>
+<script type="text/javascript">
+  //<![CDATA[
+    $('#manual_submit').codeSchoolCourse({theme: 'course', mode: 'ruby'});
+    $('#resource-tabs li a').codeSchoolCourse('tabs', {active_tab: '#database_tab'});
+    $('#editor-tabs li a').codeSchoolCourse('editors', {panels: '.editor-wrap'});
+    $('#next_hint').codeSchoolCourse('hints', {points: '#challenge_points', hint_list: '#hints ol', hints_remaining: '#hints_remaining'});
+    
+    $(document).ready(function(){    
+      window.codeSchoolEditor.code_splitter = '\n';
+    
+      $("#utility-level").facebox({
+        opacity: 0.87,
+        loadingImage: '/code_path_course_engine/images/loading2.gif',
+        closeImage: '/code_path_course_engine/images/sidebar-close.png'
+      });
+    });
+  //]]>
+</script>
+
+
+<script type="text/javascript">
+  //<![CDATA[
+    var code_highlighted = false;
+    function try_to_init_code_highlighter(){}
+  //]]>
+</script>
+<script src="./Code School - Rails Best Practices_files/loader.js" type="text/javascript"></script>
+
+
+    <div id="facebox" style="display:none;">       <div class="popup">         <div class="content">         </div>         <a href="http://railsbest.com/levels/4/challenges/6#" class="close"><img src="./Code School - Rails Best Practices_files/sidebar-close.png" title="close" class="close_image"></a>       </div>     </div></body></html>

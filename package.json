@@ -1,0 +1,17 @@
+{
+  "name": "mutualChat",
+  "version": "1.0.0",
+  "dependencies": {
+    "socket.io": "0.9.13",
+    "express": "~3.1.0",
+    "html": "0.0.7",
+    "redis": "0.8.1"
+  },
+  "subdomain": "ascoppa.mutualChat",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}

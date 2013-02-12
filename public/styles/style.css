@@ -1,0 +1,67 @@
+h1 {
+    font-family: tahoma;
+    color:#20b2aa;
+}
+
+#left_column, #right_column{
+    float: left;
+    padding: 10px;
+    margin: 0px;
+}
+
+#users {
+    padding: 0px;
+    list-style: none;
+    width: 150px;
+    height: 250px;
+    border: 1px solid gainsboro;
+    overflow:auto;
+}
+
+#messages {
+    list-style: none;
+    width: 400px;
+    height: 200px;
+    border: 1px solid gainsboro;
+    padding: 0px;
+    overflow:auto;
+}
+
+.user_name{
+    font-size: 12px;
+    font-family: tahoma;
+    background-color: whitesmoke;
+    border-bottom: 1px solid gainsboro;
+    padding: 4px 12px;
+}
+
+.user_name.you{
+    font-weight: bold;
+}
+
+.private_user{
+    background: lemonchiffon;
+}
+.selected {
+    background-color: #90ee90;
+
+}
+
+.message_row{
+    font-family: tahoma;
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: solid gainsboro 1px;
+}
+
+.message_row .name {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+#message {
+    width: 325px;
+    height:20px;
+    font-size:10px;
+    border: solid gainsboro 1px;
+}
